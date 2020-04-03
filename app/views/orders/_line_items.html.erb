@@ -1,0 +1,14 @@
+<% item_total = line_item.item_price_cents / 100 * line_item.quantity %>
+
+<tr>
+  <td><%= image_tag product.image.tiny %></td>
+  <td>
+    <h4><%= product.name %></h4>
+    <br><p><%= product.description %></p>
+  </td>
+  <td> <%= humanized_money_with_symbol line_item.item_price_cents / 100 %></td><td>
+    <%= line_item.quantity %>
+  </td>
+  <td><%= humanized_money_with_symbol line_item_total = (line_item.item_price_cents / 100) * line_item.quantity %></td>
+  </tr>
+<tbody>
