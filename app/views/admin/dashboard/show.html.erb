@@ -1,2 +1,25 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><%= link_to "Categories", root_path %></li>
+    <li class="breadcrumb-item"><%= link_to "Products", "admin/products#index" %></li>
+    <li class="breadcrumb-item active" aria-current="page">DashBoard</li>
+  </ol>
+</nav>
+
+<ul class="list-group">
+  <li class="list-group-item">
+    <span class="badge"><%= @products_count %> </span>
+    Products
+  </li>
+
+  <li class="list-group-item">
+    <span class="badge"><%=@products_quantity%></span>
+    Quantities 
+  </li>
+
+  <li class="list-group-item">
+    <span class="badge"><%= @categories %>  </span>
+    Categories
+  </li>
+</ul>
