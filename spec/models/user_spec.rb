@@ -55,7 +55,7 @@ RSpec.describe User, type: :model do
         expect(user_new1).to_not be_valid
       end
 
-      it "emails must be unique and not case sensitive" do
+      it "emails are not case sensitive" do
         user_new= User.create(password: "some_password",
         password_confirmation: "some_password", 
         email: "john@doe.com",
@@ -66,7 +66,7 @@ RSpec.describe User, type: :model do
         email: "joHN@doe.com",
         name: "John Doe"
         )    
-        expect(user_new1).to be_valid
+        expect(user_new1).to_not be_valid
       end
 
       it "is not valid without a name" do
