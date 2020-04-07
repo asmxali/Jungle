@@ -1,9 +1,15 @@
+
+
 <section class="cart-show">
 
   <header class="page-header">
     <h1>My Cart</h1>
   </header>
 
+  <% if (enhanced_cart.empty?) %>
+    <h4> You haven't added anything to your cart yet </h4>
+    <%= link_to "Go Back To Home" , root_path %>
+  <% else %>
   <div class="panel panel-default items">
     <table class="table table-bordered">
       <thead>
@@ -15,9 +21,11 @@
         </tr>
       </thead>
       <tbody>
-        <% enhanced_cart.each do |item| %>
-          <%= render 'item', product: item[:product], quantity: item[:quantity].to_i %>
+      
+       <% enhanced_cart.each do |item| %> 
+        <%= render 'item', product: item[:product], quantity: item[:quantity].to_i %>
         <% end %>
+  
       </tbody>
       <tfoot>
         <tr>
@@ -25,11 +33,12 @@
             TOTAL:
           </th>
           <th>
-            <%= cart_subtotal_cents / 100.0 %>
+            <%=humanized_money_with_symbol cart_subtotal_cents / 100.0 %>
           </th>
         </tr>
       </tfoot>
     </table>
+
   </div>
 
   <div class="row">
@@ -48,5 +57,5 @@
       <% end %>
     </div>
   </div>
-
+  <% end %>
 </section>

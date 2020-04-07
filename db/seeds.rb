@@ -47,7 +47,7 @@ cat1.products.create!({
   name:  'Women\'s Zebra pants',
   description: Faker::Hipster.paragraph(4),
   image: open_asset('apparel2.jpg'),
-  quantity: 18,
+  quantity: 0,
   price: 124.99
 })
 
@@ -96,7 +96,7 @@ cat2.products.create!({
   name:  'Hotdog Slicer',
   description: Faker::Hipster.paragraph(4),
   image: open_asset('electronics2.jpg'),
-  quantity: 3,
+  quantity: 0,
   price: 26.00
 })
 
