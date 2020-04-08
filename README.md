@@ -1,10 +1,23 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+This project was built in order to learn Rails, it is a mini e-commerce application built with Rails 4.2 and UI,model and feature testing with RSpec and Capybara. This was a week-long project that would simulate a real world experience where you inherit an existing code base in a language and framework that you are not familiar with. Functionality for certain features were implemented or bugs fixed including:
+
+- Feature: Admin authentication
+- Feature: Admin controls (add products and categories)
+- Feature: Order products
+- Feature: User registration and authentication
+- Feature: Check out using Stripe
+- Feature: Order confirmations and emails
+- Feature: Product Rating
+
+- Bug:  Missing Admin Security
+- Bug: Checking out with Empty Cart
 
 # Demo
-![Login in as User](https://github.com/asmxali/Jungle/blob/master/Jungle.gif)
-![Login in as Admin](https://github.com/asmxali/Jungle/blob/master/Jungle2.gif)
+### When Logged in in as User:
+![](https://github.com/asmxali/Jungle/blob/master/Jungle.gif)
+### When Logged in as Admin:
+![](https://github.com/asmxali/Jungle/blob/master/Jungle2.gif)
 ## Setup
 
 1. Run `bundle install` to install dependencies
