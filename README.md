@@ -3,9 +3,9 @@
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
 
 # Demo
-# When Logged in in as User
+### When Logged in in as User
 ![](https://github.com/asmxali/Jungle/blob/master/Jungle.gif)
-# When Logged in as Admin
+### When Logged in as Admin
 ![](https://github.com/asmxali/Jungle/blob/master/Jungle2.gif)
 ## Setup
 
