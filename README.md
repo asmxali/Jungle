@@ -8,10 +8,10 @@ This project was built in order to learn Rails, it is a mini e-commerce applicat
 - Feature: User registration and authentication
 - Feature: Check out using Stripe
 - Feature: Order confirmations and emails
-- Feature:Product Rating
+- Feature: Product Rating
 
-- Bug - Missing Admin Security
-- Bug - Checking out with Empty Cart
+- Bug:  Missing Admin Security
+- Bug: Checking out with Empty Cart
 
 # Demo
 ### When Logged in in as User:
